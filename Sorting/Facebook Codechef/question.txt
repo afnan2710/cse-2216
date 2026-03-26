@@ -1,0 +1,58 @@
+Facebook Codechef Problem
+
+A post on facebook is said to be more popular if the number of likes on the post is strictly greater than the number of likes on some other post. In case the number of likes is same, the post having more comments is more popular.
+Given arrays AA and BB, each having size NN, such that the number of likes and comments on the ithith post are AiAi and BiBi respectively, find out which post is most popular.
+It is guaranteed that the number of comments on all the posts is distinct.
+Input Format
+* The first line of input will contain a single integer TT, denoting the number of test cases.
+* Each test case consists of multiple lines of input.
+   * The first line of each test case contains a single integer NN, the number of posts.
+   * The second line of each test case contains NN space-separated integers A1,A2,…,ANA1,A2​,…,AN​ — where AiAi​ is the number of likes on the ithith post.
+   * The third line of each test case contains NN space-separated integers B1,B2,…,BNB1,B2​,…,BN​ — where BiBi​ is the number of comments on the ithith post.
+Output Format
+For each test case, output on a new line, an integer in the range 11 to NN, denoting the index of the post which is most popular among the NN posts.
+Constraints
+* 1≤T≤10001≤T≤1000
+* 1≤N≤1051≤N≤105
+* 1≤Ai,Bi≤2⋅1051≤Ai,Bi​≤2⋅105
+* The elements of array BB are distinct.
+* It is guaranteed that the sum of NN over all test case does not exceed 2⋅1052⋅105.
+Sample 1:
+
+Input
+
+```
+4
+3
+5 4 4
+1 2 3
+
+3
+10 10 9
+2 5 4
+
+3
+3 3 9
+9 1 3
+
+4
+2 8 1 5
+2 8 1 9
+
+```
+
+Output
+
+```
+1
+2
+3
+2
+
+```
+
+Explanation:
+Test case 11: The number of likes on the first post is greater than that of second and third post. Thus, the first post is most popular.
+Test case 22: The first and second post have maximum number of likes. But, the second post has more comments than the first post. Thus, the second post is most popular.
+Test case 33: The number of likes on the third post is greater than that of first and second post. Thus, the third post is most popular.
+Test case 44: The number of likes on the second post is greater than that of first, third, and fourth post. Thus, the second post is most popular.
